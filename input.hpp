@@ -6,14 +6,13 @@
 
 /**
  * @file input.hpp
- * @brief This file contains functions for handling user input.  Specifically, it provides a function to retrieve a list of integers from the user.
+ * @brief This file contains the function to get a list of numbers from the user.
  */
 
 /**
- * Gets a list of numbers from the user.  Handles potential errors in user input.
+ * Gets a list of numbers from the user as input.  The function continues to prompt the user until a non-numeric input is detected.
  *
- * @return A std::vector<int> containing the numbers entered by the user. Returns an empty vector if no valid numbers are entered.
- * @throws std::runtime_error If there's a critical error during input processing (e.g., memory allocation failure).
+ * @return A standard vector containing the numbers entered by the user. Returns an empty vector if no valid numbers are entered.
  */
 std::vector<int> get_numbers();
 
