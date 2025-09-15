@@ -5,20 +5,18 @@
 #include "sort.hpp"
 
 /**
- * @brief The main function of the program. This program demonstrates a simple sorting algorithm.
+ * @brief This program demonstrates a simple sorting algorithm.
  * 
- * The program first obtains a vector of integers from the user using the `get_numbers()` function.
- * Then, it sorts the vector using the `bubble_sort()` function. Finally, it prints the sorted vector to the console.
- * @return 0 if the program executes successfully.
+ * It takes numerical input from the user, sorts it using bubble sort, and then prints the sorted numbers.
  */
 int main() {
-    // Get a vector of numbers from the user.
+    // Get numbers from user input.
     std::vector<int> my_numbers = get_numbers();
 
     // Sort the numbers using bubble sort.
     bubble_sort(my_numbers);
 
-    // Print the sorted numbers.
+    // Print the sorted numbers to the console.
     std::cout << "Sorted numbers: ";
     for (int num : my_numbers) {
         std::cout << num << " ";
